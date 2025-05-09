@@ -16,6 +16,7 @@ function determineWinner({ player, enemy, timerId }) {
   if (player.health === enemy.health) {
     document.querySelector('#displayText').innerHTML = 'Draw';
     setTimeout(() => {
+      console.log("hi");
       window.location.reload();
     }, 4000);
   } else if (player.health > enemy.health) {
